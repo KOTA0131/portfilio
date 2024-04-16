@@ -6,8 +6,8 @@ from twilio.rest import Client
 # When STOCK price increase/decreases by 5% between yesterday and the day before yesterday then print("Get News").
 
 
-account_sid = "AC0f745db6cf4ce2ee765557049e80d388"
-auth_token = "ecd607d486dbdd187350d4c7cfa18043"
+account_sid = mystd
+auth_token = mythoken
 verified_number = myphone
 
 
