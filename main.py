@@ -47,6 +47,6 @@ if bring:
     message = client.messages \
         .create(
         body="It's going to rain today. Remember to bring an ☔.",
-        from_='+12762955619',
-        to='+8109058964414'
+        from_=twiliophone,
+        to=myphone
     )
