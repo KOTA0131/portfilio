@@ -11,7 +11,7 @@ auth_token = mythoken
 verified_number = myphone
 
 
-STOCK_PRICE_API = "OMPBI9W91ZW27U9O"
+STOCK_PRICE_API = stockapi
 STOCK_ENDPOINT = "https://www.alphavantage.co/query"
 stock_parameter = {
     "function": "TIME_SERIES_DAILY",
@@ -21,7 +21,7 @@ stock_parameter = {
 }
 
 NEWS_ENDPOINT = "https://newsapi.org/v2/everything"
-NEWS_API = "521345dccf784eba9dfc0be84dd785da"
+NEWS_API = newapi
 
 
 stock_response = requests.get(STOCK_ENDPOINT, params=stock_parameter)
