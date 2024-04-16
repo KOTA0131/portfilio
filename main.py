@@ -8,7 +8,7 @@ from twilio.rest import Client
 
 account_sid = "AC0f745db6cf4ce2ee765557049e80d388"
 auth_token = "ecd607d486dbdd187350d4c7cfa18043"
-verified_number = "+8109058964414"
+verified_number = myphone
 
 
 STOCK_PRICE_API = "OMPBI9W91ZW27U9O"
@@ -58,8 +58,8 @@ if abs(result_stock) >= 5:
     message = client.messages \
         .create(
         body=formatted_article,
-        from_='+12762955619',
-        to='+8109058964414'
+        from_=twiliophone,
+        to=myphone
     )
 
 
