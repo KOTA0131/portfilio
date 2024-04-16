@@ -4,8 +4,8 @@ import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 
 # Scraping Billboard 100
-MY_CLIENT_ID = "84b88dd9095c4f88a216946cff32a14c"
-MY_CLIENT_SECRET = "2ba63e6fb3e94ea4814262375b4f538b"
+MY_CLIENT_ID = myid
+MY_CLIENT_SECRET = mysecret
 date = input("Which year do you want to travel to? Type the date in this format YYYY-MM-DD: ")
 response = requests.get("https://www.billboard.com/charts/hot-100/" + date)
 soup = BeautifulSoup(response.text, 'html.parser')
