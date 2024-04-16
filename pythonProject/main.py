@@ -32,8 +32,8 @@ value = int(grip_value.replace(",", ""))
 grip_title = soup.find("span", id="productTitle", class_="a-size-large product-title-word-break").get_text()
 
 """ メール設定 """
-from_email = "zmakqowieu@outlook.jp"  # 送信元アドレス
-to_email = "huangdaxiashi@outlook.jp"
+from_email = "@outlook.jp"  # 送信元アドレス
+to_email = "@outlook.jp"
 smtp_host = "outlook.office365.com"
 
 with smtplib.SMTP("outlook.office365.com", port=587) as connection:
@@ -50,6 +50,6 @@ with smtplib.SMTP("outlook.office365.com", port=587) as connection:
     server.ehlo()
     server.starttls()
     server.ehlo()
-    server.login("Kaji Kota", "K71310131k@")
+    server.login(myname, password)
     server.send_message(msg)
     server.quit()
